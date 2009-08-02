@@ -1,0 +1,22 @@
+#! @SHELL@
+
+#
+# Copyright (C) 2009 Francesco Salvestrini
+# Licensed under the terms of the GNU General Public License.
+
+# Test to ensure that the test environment has a good set-up
+
+required="aclocal autoconf"
+
+. @abs_builddir@/defs || exit 1
+
+cat > ./configure.ac <<EOF
+AC_INIT([test],[0.1])
+AC_OUTPUT
+EOF
+
+$ACLOCAL    || exit 1
+$AUTOCONF   || exit 1
+./configure || exit 1
+
+exit 0

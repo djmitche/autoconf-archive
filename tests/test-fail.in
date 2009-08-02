@@ -1,0 +1,13 @@
+#! @SHELL@
+
+#
+# Copyright (C) 2009 Francesco Salvestrini
+# Licensed under the terms of the GNU General Public License.
+
+# Test to ensure that the test environment has a good set-up
+
+required=""
+
+. @abs_builddir@/defs || exit 1
+
+exit 1

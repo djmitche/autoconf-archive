@@ -13,6 +13,8 @@ dist_html_DATA          = $(HTMLFILE)
 
 EXTRA_DIST		= build-aux/git-version-gen
 
+SUBDIRS                 = tests
+
 # maintainer rules
 
 dist-hook:
